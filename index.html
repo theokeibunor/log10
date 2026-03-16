@@ -35,6 +35,17 @@
     }
     .portfolio-item:hover .overlay { opacity: 1; }
     .transition-all-custom { transition: all 0.3s ease-in-out; }
+    .hero-fade {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeUp 0.8s ease forwards;
+    }
+    .hero-fade:nth-child(1) { animation-delay: 0.1s; }
+    .hero-fade:nth-child(2) { animation-delay: 0.3s; }
+    .hero-fade:nth-child(3) { animation-delay: 0.5s; }
+    @keyframes fadeUp {
+      to { opacity: 1; transform: translateY(0); }
+    }
   </style>
 </head>
 <body class="bg-slate-50 text-slate-900 antialiased">
@@ -85,11 +96,11 @@
     </div>
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
       <div class="text-center max-w-3xl mx-auto">
-        <span class="mono text-xs font-bold tracking-widest text-blue-600 uppercase mb-4 block">Expertise &amp; Solutions</span>
-        <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight mb-6">
+        <span class="hero-fade mono text-xs font-bold tracking-widest text-blue-600 uppercase mb-4 block">Expertise &amp; Solutions</span>
+        <h1 class="hero-fade text-4xl md:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight mb-6">
           Scalable Growth Through <span class="gradient-text">Precision Marketing</span>.
         </h1>
-        <p class="text-lg text-slate-600 leading-relaxed mb-8">
+        <p class="hero-fade text-lg text-slate-600 leading-relaxed mb-8">
           We combine logarithmic scale thinking with data-driven creative to deliver marketing services that move the needle. Explore our specialized offerings below.
         </p>
       </div>
@@ -97,28 +108,28 @@
   </section>
 
   <!-- Stats Strip -->
-  <section class="bg-white border-b border-slate-200 py-10">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <section class="bg-white border-b border-slate-200 py-6">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex flex-wrap justify-center divide-x divide-slate-200">
-        <div class="px-6 md:px-10 py-2 text-center">
-          <div class="text-2xl md:text-3xl font-extrabold text-slate-900">$400K+</div>
-          <div class="text-xs text-slate-500 mt-1">Spend Managed</div>
+        <div class="px-4 md:px-8 py-1 text-center">
+          <div class="text-lg md:text-xl font-bold text-slate-900">$400K+</div>
+          <div class="text-[11px] text-slate-400 mt-0.5">Spend Managed</div>
         </div>
-        <div class="px-6 md:px-10 py-2 text-center">
-          <div class="text-2xl md:text-3xl font-extrabold text-slate-900">3&times;&ndash;10&times;</div>
-          <div class="text-xs text-slate-500 mt-1">ROAS Delivered</div>
+        <div class="px-4 md:px-8 py-1 text-center">
+          <div class="text-lg md:text-xl font-bold text-slate-900">3&times;&ndash;10&times;</div>
+          <div class="text-[11px] text-slate-400 mt-0.5">ROAS Delivered</div>
         </div>
-        <div class="px-6 md:px-10 py-2 text-center">
-          <div class="text-2xl md:text-3xl font-extrabold text-slate-900">28,000+</div>
-          <div class="text-xs text-slate-500 mt-1">Leads Generated</div>
+        <div class="px-4 md:px-8 py-1 text-center">
+          <div class="text-lg md:text-xl font-bold text-slate-900">28,000+</div>
+          <div class="text-[11px] text-slate-400 mt-0.5">Leads Generated</div>
         </div>
-        <div class="px-6 md:px-10 py-2 text-center">
-          <div class="text-2xl md:text-3xl font-extrabold text-slate-900">30</div>
-          <div class="text-xs text-slate-500 mt-1">Countries</div>
+        <div class="px-4 md:px-8 py-1 text-center">
+          <div class="text-lg md:text-xl font-bold text-slate-900">30</div>
+          <div class="text-[11px] text-slate-400 mt-0.5">Countries</div>
         </div>
-        <div class="px-6 md:px-10 py-2 text-center">
-          <div class="text-2xl md:text-3xl font-extrabold text-slate-900">60 Yrs</div>
-          <div class="text-xs text-slate-500 mt-1">Combined Experience</div>
+        <div class="px-4 md:px-8 py-1 text-center">
+          <div class="text-lg md:text-xl font-bold text-slate-900">60 Yrs</div>
+          <div class="text-[11px] text-slate-400 mt-0.5">Combined Experience</div>
         </div>
       </div>
     </div>
