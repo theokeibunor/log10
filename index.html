@@ -96,6 +96,34 @@
     </div>
   </section>
 
+  <!-- Stats Strip -->
+  <section class="bg-white border-b border-slate-200 py-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-wrap justify-center divide-x divide-slate-200">
+        <div class="px-6 md:px-10 py-2 text-center">
+          <div class="text-2xl md:text-3xl font-extrabold text-slate-900">$400K+</div>
+          <div class="text-xs text-slate-500 mt-1">Spend Managed</div>
+        </div>
+        <div class="px-6 md:px-10 py-2 text-center">
+          <div class="text-2xl md:text-3xl font-extrabold text-slate-900">3&times;&ndash;10&times;</div>
+          <div class="text-xs text-slate-500 mt-1">ROAS Delivered</div>
+        </div>
+        <div class="px-6 md:px-10 py-2 text-center">
+          <div class="text-2xl md:text-3xl font-extrabold text-slate-900">28,000+</div>
+          <div class="text-xs text-slate-500 mt-1">Leads Generated</div>
+        </div>
+        <div class="px-6 md:px-10 py-2 text-center">
+          <div class="text-2xl md:text-3xl font-extrabold text-slate-900">30</div>
+          <div class="text-xs text-slate-500 mt-1">Countries</div>
+        </div>
+        <div class="px-6 md:px-10 py-2 text-center">
+          <div class="text-2xl md:text-3xl font-extrabold text-slate-900">60 Yrs</div>
+          <div class="text-xs text-slate-500 mt-1">Combined Experience</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Services -->
   <main class="py-20 bg-slate-50" id="services">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -173,6 +201,31 @@
           </ul>
         </article>
 
+        <!-- Influencer Marketing -->
+        <article class="service-card bg-white p-8 rounded-2xl border border-slate-200 shadow-sm md:col-span-2 lg:col-span-2">
+          <div class="flex flex-col md:flex-row md:items-center gap-8">
+            <div class="flex-1">
+              <div class="mb-6 w-14 h-14 bg-amber-50 text-amber-600 rounded-xl flex items-center justify-center">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                </svg>
+              </div>
+              <h2 class="text-2xl font-bold text-slate-900 mb-4">Influencer Marketing</h2>
+              <p class="text-slate-600 mb-8">
+                The most credible voice for your brand is rarely the brand itself. We activate the right influencers — across travel, lifestyle, celebrity, business, and family niches — in Nigeria, Kenya, South Africa, UAE, KSA, and beyond.
+              </p>
+              <ul class="space-y-3 text-sm text-slate-500">
+                <li class="flex items-center"><span class="w-2 h-2 bg-amber-500 rounded-full mr-2"></span> Influencer Identification &amp; Vetting</li>
+                <li class="flex items-center"><span class="w-2 h-2 bg-amber-500 rounded-full mr-2"></span> Campaign Briefing &amp; Management</li>
+                <li class="flex items-center"><span class="w-2 h-2 bg-amber-500 rounded-full mr-2"></span> Content Performance Tracking</li>
+              </ul>
+            </div>
+            <div class="hidden md:block flex-shrink-0">
+              <img alt="Fashion influencer creating content with ring light" class="w-96 h-64 object-cover rounded-2xl" src="https://images.pexels.com/photos/13929966/pexels-photo-13929966.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" />
+            </div>
+          </div>
+        </article>
+
       </div>
     </div>
   </main>
@@ -240,105 +293,184 @@
     <!-- Portfolio Filter -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12">
       <div class="flex flex-wrap items-center justify-center gap-4">
-        <button class="px-6 py-2 rounded-full bg-blue-600 text-white text-sm font-semibold transition-all-custom shadow-md shadow-blue-200" data-filter="all">All Projects</button>
-        <button class="px-6 py-2 rounded-full bg-slate-100 text-slate-600 text-sm font-semibold hover:bg-slate-200 transition-all-custom" data-filter="seo">SEO</button>
-        <button class="px-6 py-2 rounded-full bg-slate-100 text-slate-600 text-sm font-semibold hover:bg-slate-200 transition-all-custom" data-filter="social">Social Media</button>
-        <button class="px-6 py-2 rounded-full bg-slate-100 text-slate-600 text-sm font-semibold hover:bg-slate-200 transition-all-custom" data-filter="ppc">Paid Media</button>
-        <button class="px-6 py-2 rounded-full bg-slate-100 text-slate-600 text-sm font-semibold hover:bg-slate-200 transition-all-custom" data-filter="content">Content Strategy</button>
+        <button class="filter-btn px-6 py-2 rounded-full bg-blue-600 text-white text-sm font-semibold transition-all-custom shadow-md shadow-blue-200">All Projects</button>
+        <button class="filter-btn px-6 py-2 rounded-full bg-slate-100 text-slate-600 text-sm font-semibold hover:bg-slate-200 transition-all-custom">SEO</button>
+        <button class="filter-btn px-6 py-2 rounded-full bg-slate-100 text-slate-600 text-sm font-semibold hover:bg-slate-200 transition-all-custom">Social Media</button>
+        <button class="filter-btn px-6 py-2 rounded-full bg-slate-100 text-slate-600 text-sm font-semibold hover:bg-slate-200 transition-all-custom">Paid Media</button>
+        <button class="filter-btn px-6 py-2 rounded-full bg-slate-100 text-slate-600 text-sm font-semibold hover:bg-slate-200 transition-all-custom">Content Strategy</button>
       </div>
     </div>
 
     <!-- Portfolio Grid -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="portfolio-grid">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-        <article class="portfolio-item group relative overflow-hidden rounded-2xl bg-white shadow-lg shadow-slate-200/50 transition-all-custom hover:-translate-y-2" data-category="social">
+        <!-- Card A: BIC -->
+        <article class="portfolio-item group relative overflow-hidden rounded-2xl bg-white shadow-lg shadow-slate-200/50 transition-all-custom hover:-translate-y-2 cursor-pointer" onclick="openModal('modal-bic')">
           <div class="relative overflow-hidden">
-            <img alt="Fashion campaign visuals" class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4_AloaBAu_VulhQvr4vlSBUfT34R8fBRL7fU156NTi4cQkb5dhoFS54wxqGi0ChBFPbEOjruvPxdu9K8ImOzvkfm527Orma09Piy-LvfjBD3WXcFNgx5QI_X-7a9aUxbwjoJuiT3xCq1u_onrS0HScjh0Nvl1CF118m6LGnsTy8aMGI6-wIPrK4bofA4SXWESeKkiAg7BGylG9z5fIgG7QuuIQSuxdOzaxhTX2QCEBsrI-lSsq6Kc-Ria6zaZ4w1WV0q_HvjNoBel" />
+            <img alt="BIC campaign" class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4_AloaBAu_VulhQvr4vlSBUfT34R8fBRL7fU156NTi4cQkb5dhoFS54wxqGi0ChBFPbEOjruvPxdu9K8ImOzvkfm527Orma09Piy-LvfjBD3WXcFNgx5QI_X-7a9aUxbwjoJuiT3xCq1u_onrS0HScjh0Nvl1CF118m6LGnsTy8aMGI6-wIPrK4bofA4SXWESeKkiAg7BGylG9z5fIgG7QuuIQSuxdOzaxhTX2QCEBsrI-lSsq6Kc-Ria6zaZ4w1WV0q_HvjNoBel" />
             <div class="overlay absolute inset-0 bg-blue-900/80 opacity-0 transition-opacity duration-300 flex items-center justify-center">
               <span class="px-6 py-3 bg-white text-blue-900 font-bold rounded-lg transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">View Case Study</span>
             </div>
           </div>
           <div class="p-6">
-            <span class="text-xs font-bold text-blue-600 uppercase tracking-widest">Social Media</span>
-            <h3 class="mt-2 text-xl font-bold text-slate-900">Spring Awakening 2024</h3>
-            <p class="mt-1 text-slate-500">NeoFashion Global</p>
+            <span class="text-xs font-bold text-blue-600 uppercase tracking-widest">Paid Media + Influencer</span>
+            <h3 class="mt-2 text-xl font-bold text-slate-900">BIC</h3>
+            <p class="mt-1 text-slate-500">488M+ Impressions | 212M+ Reach | 30+ Influencers</p>
           </div>
         </article>
 
-        <article class="portfolio-item group relative overflow-hidden rounded-2xl bg-white shadow-lg shadow-slate-200/50 transition-all-custom hover:-translate-y-2" data-category="ppc">
+        <!-- Card B: EduTech Global -->
+        <article class="portfolio-item group relative overflow-hidden rounded-2xl bg-white shadow-lg shadow-slate-200/50 transition-all-custom hover:-translate-y-2 cursor-pointer" onclick="openModal('modal-edutech')">
           <div class="relative overflow-hidden">
-            <img alt="Digital analytics dashboard" class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxES5sQQd5qRQ3bb2Op1jcCuQ85x1UatZQgzSPcRFIQwEPdZs53_OhrShZQW3bDuv_XCTsE_OrgclzZEtxw_zaMrDnEgw-veDczAiPMb2GqnRtO_IxQ_rZFCiTlrk4F5KtZeHk2UlXHQuYmJ1lvY5IBvIeC22Soy8pdyF4lSd7GknIds2U03ikiNwbs6JJWuoqsGJ9D-Vjo7VZhmH6--bryt61hsDQVGUn9w39cD9lEfon8Du5ype11FRdxqUDqLvgHV1nBhlHF5of" />
+            <img alt="EduTech Global campaign" class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxES5sQQd5qRQ3bb2Op1jcCuQ85x1UatZQgzSPcRFIQwEPdZs53_OhrShZQW3bDuv_XCTsE_OrgclzZEtxw_zaMrDnEgw-veDczAiPMb2GqnRtO_IxQ_rZFCiTlrk4F5KtZeHk2UlXHQuYmJ1lvY5IBvIeC22Soy8pdyF4lSd7GknIds2U03ikiNwbs6JJWuoqsGJ9D-Vjo7VZhmH6--bryt61hsDQVGUn9w39cD9lEfon8Du5ype11FRdxqUDqLvgHV1nBhlHF5of" />
             <div class="overlay absolute inset-0 bg-blue-900/80 opacity-0 transition-opacity duration-300 flex items-center justify-center">
               <span class="px-6 py-3 bg-white text-blue-900 font-bold rounded-lg transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">View Case Study</span>
             </div>
           </div>
           <div class="p-6">
-            <span class="text-xs font-bold text-blue-600 uppercase tracking-widest">Paid Media</span>
-            <h3 class="mt-2 text-xl font-bold text-slate-900">User Acquisition Blitz</h3>
-            <p class="mt-1 text-slate-500">TechStream Inc.</p>
+            <span class="text-xs font-bold text-blue-600 uppercase tracking-widest">Paid Media | Pan-Africa</span>
+            <h3 class="mt-2 text-xl font-bold text-slate-900">EduTech Global</h3>
+            <p class="mt-1 text-slate-500">20,885 Leads. 10 Countries.</p>
           </div>
         </article>
 
-        <article class="portfolio-item group relative overflow-hidden rounded-2xl bg-white shadow-lg shadow-slate-200/50 transition-all-custom hover:-translate-y-2" data-category="seo">
+        <!-- Card C: Uganda Investment Summit -->
+        <article class="portfolio-item group relative overflow-hidden rounded-2xl bg-white shadow-lg shadow-slate-200/50 transition-all-custom hover:-translate-y-2 cursor-pointer" onclick="openModal('modal-uganda')">
           <div class="relative overflow-hidden">
-            <img alt="Growth chart visuals" class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQYRbJOSUvgqiz4plze8RDcBCgZiEC6Pz22bxJ7H91PQHmZnVCGn6u9D303T2JMPzaPhaiHtsCaRd75cI4GjcZSwHJnqIF1V9UxgAAOGm_Oy1m0DVFIuNzY0sn8N-B1OCx076qcMLHqFhr5bXUSFI2dFKSIDcMSOHGvocd21R4Vz65N6_2YbuKfplC-HqnSaXyr1oQOSoKEWbNefQC4ltwCsLZA9qcK2_6pEo4_LmM6YgL4d7MWIAC4TDh1jt7xsgg6jMluQl9MP70" />
+            <img alt="Uganda Investment Summit" class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQYRbJOSUvgqiz4plze8RDcBCgZiEC6Pz22bxJ7H91PQHmZnVCGn6u9D303T2JMPzaPhaiHtsCaRd75cI4GjcZSwHJnqIF1V9UxgAAOGm_Oy1m0DVFIuNzY0sn8N-B1OCx076qcMLHqFhr5bXUSFI2dFKSIDcMSOHGvocd21R4Vz65N6_2YbuKfplC-HqnSaXyr1oQOSoKEWbNefQC4ltwCsLZA9qcK2_6pEo4_LmM6YgL4d7MWIAC4TDh1jt7xsgg6jMluQl9MP70" />
             <div class="overlay absolute inset-0 bg-blue-900/80 opacity-0 transition-opacity duration-300 flex items-center justify-center">
               <span class="px-6 py-3 bg-white text-blue-900 font-bold rounded-lg transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">View Case Study</span>
             </div>
           </div>
           <div class="p-6">
-            <span class="text-xs font-bold text-blue-600 uppercase tracking-widest">SEO</span>
-            <h3 class="mt-2 text-xl font-bold text-slate-900">Sustainable Reach</h3>
-            <p class="mt-1 text-slate-500">GreenRoot Organics</p>
-          </div>
-        </article>
-
-        <article class="portfolio-item group relative overflow-hidden rounded-2xl bg-white shadow-lg shadow-slate-200/50 transition-all-custom hover:-translate-y-2" data-category="content">
-          <div class="relative overflow-hidden">
-            <img alt="Magazine layout" class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0VAiNMDfhKmnLeQkepiJ3OFOFLqeVuLIq6RLtzGWDvej-ZPdH5HNlJkYAkfw2ryMclotorRIoYAWNYJE9xcvFFaZsY812qyrU13mOvIaQdw0J5RsahmTHIYK7x6MHhT2wL8FdPHyUy0e-F-jTu3ELRWpjLTYTiMKERS_FjoKiG7GGmR7A5xmdz1AMQG1bL4VFZ1lsV8RrTGyYP20iFYP6H3n3olXjnzBIhywAEE48q9bzKrSu-RmjimlgVUiUfLGeBSe8Zg-sbn0Q" />
-            <div class="overlay absolute inset-0 bg-blue-900/80 opacity-0 transition-opacity duration-300 flex items-center justify-center">
-              <span class="px-6 py-3 bg-white text-blue-900 font-bold rounded-lg transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">View Case Study</span>
-            </div>
-          </div>
-          <div class="p-6">
-            <span class="text-xs font-bold text-blue-600 uppercase tracking-widest">Content Strategy</span>
-            <h3 class="mt-2 text-xl font-bold text-slate-900">The Modern Commuter</h3>
-            <p class="mt-1 text-slate-500">Velocity Motors</p>
-          </div>
-        </article>
-
-        <article class="portfolio-item group relative overflow-hidden rounded-2xl bg-white shadow-lg shadow-slate-200/50 transition-all-custom hover:-translate-y-2" data-category="social">
-          <div class="relative overflow-hidden">
-            <img alt="Lifestyle social media photos" class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXZzFyzV8cKhD8S2NcjpfRtAowczpEDE-9fsDl7v8FbVQub6sl77EzP3ZX3SUeUZrX6ISiwcd2OR_btf_BmHwGOdFfdJhL5Z-PRzxelDtGDT4cZp3QP25cXyd-c1xw611YV57nWp6h_HBaxtn00gGINTedif_Vx83R6DhcG_IN3cGkwJ01pbpMzZGKidUpi75MKC79GJPwnPbBDTrS_m_ZOnhEJcPmiN1Z11rvsn7kX3lYokH_8cSFBtBrQX0ZpdhixJJ8X6HJcuPj" />
-            <div class="overlay absolute inset-0 bg-blue-900/80 opacity-0 transition-opacity duration-300 flex items-center justify-center">
-              <span class="px-6 py-3 bg-white text-blue-900 font-bold rounded-lg transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">View Case Study</span>
-            </div>
-          </div>
-          <div class="p-6">
-            <span class="text-xs font-bold text-blue-600 uppercase tracking-widest">Social Media</span>
-            <h3 class="mt-2 text-xl font-bold text-slate-900">Influencer Takeover</h3>
-            <p class="mt-1 text-slate-500">Zest Beverage Co.</p>
-          </div>
-        </article>
-
-        <article class="portfolio-item group relative overflow-hidden rounded-2xl bg-white shadow-lg shadow-slate-200/50 transition-all-custom hover:-translate-y-2" data-category="ppc">
-          <div class="relative overflow-hidden">
-            <img alt="Search engine results visual" class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBe-BmF6ZLfwcuI2hLwW3OhYUcbc8MKRGl3lqKOgn1hkDwLyvbizAqhkESaoXANKujPYX02kSRZolq0dbJdHnZ7oxWI4kTAAFa1wmkFW63fnYjKT3zaieMGxoRkTuHsqnWH36c4o8_mzM8wM_298EMkRaSU3jviKDUYWcVVblBtH6Dnxv1XgNqDNaOf9_LaMBM02njw-DUws9QOVQHO4y7PLnycgiWAnUGrzzC35C6loaCeGv1X5XMIHQQ8K07OKxtPhhP9Me-Ht2a0" />
-            <div class="overlay absolute inset-0 bg-blue-900/80 opacity-0 transition-opacity duration-300 flex items-center justify-center">
-              <span class="px-6 py-3 bg-white text-blue-900 font-bold rounded-lg transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">View Case Study</span>
-            </div>
-          </div>
-          <div class="p-6">
-            <span class="text-xs font-bold text-blue-600 uppercase tracking-widest">Paid Media</span>
-            <h3 class="mt-2 text-xl font-bold text-slate-900">Global Scaling Strategy</h3>
-            <p class="mt-1 text-slate-500">Atlas Financial</p>
+            <span class="text-xs font-bold text-blue-600 uppercase tracking-widest">Event Marketing | East Africa</span>
+            <h3 class="mt-2 text-xl font-bold text-slate-900">Uganda Investment Summit</h3>
+            <p class="mt-1 text-slate-500">Putting Uganda's Investment Story on the Regional Map.</p>
           </div>
         </article>
 
       </div>
     </div>
   </section>
+
+  <!-- Case Study Modals -->
+
+  <!-- Modal: BIC -->
+  <div id="modal-bic" class="fixed inset-0 z-[100] hidden items-center justify-center bg-black/60 backdrop-blur-sm p-4" onclick="if(event.target===this)closeModal(this)">
+    <div class="bg-white rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto shadow-2xl">
+      <div class="p-8 md:p-10">
+        <div class="flex justify-between items-start mb-6">
+          <div>
+            <span class="text-xs font-bold text-blue-600 uppercase tracking-widest">Paid Media + Influencer Marketing</span>
+            <h3 class="text-3xl font-extrabold text-slate-900 mt-2">BIC</h3>
+          </div>
+          <button onclick="closeModal(document.getElementById('modal-bic'))" class="text-slate-400 hover:text-slate-600 p-1">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+          </button>
+        </div>
+        <div class="text-slate-600 mb-8 space-y-1">
+          <p><span class="font-bold text-slate-900">FMCG.</span></p>
+          <p>Social media management, Performance marketing, &amp; Influencer campaigns.</p>
+          <p>Platforms: Instagram, TikTok, Facebook, and YouTube.</p>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div class="text-center p-4 bg-slate-50 rounded-xl">
+            <div class="text-2xl font-extrabold text-slate-900">488M+</div>
+            <div class="text-xs text-slate-500 mt-1">Impressions</div>
+          </div>
+          <div class="text-center p-4 bg-slate-50 rounded-xl">
+            <div class="text-2xl font-extrabold text-slate-900">212M+</div>
+            <div class="text-xs text-slate-500 mt-1">People Reached</div>
+          </div>
+          <div class="text-center p-4 bg-slate-50 rounded-xl">
+            <div class="text-2xl font-extrabold text-slate-900">27M+</div>
+            <div class="text-xs text-slate-500 mt-1">Video Plays</div>
+          </div>
+          <div class="text-center p-4 bg-slate-50 rounded-xl">
+            <div class="text-2xl font-extrabold text-slate-900">53M+</div>
+            <div class="text-xs text-slate-500 mt-1">Engagements</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: EduTech Global -->
+  <div id="modal-edutech" class="fixed inset-0 z-[100] hidden items-center justify-center bg-black/60 backdrop-blur-sm p-4" onclick="if(event.target===this)closeModal(this)">
+    <div class="bg-white rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto shadow-2xl">
+      <div class="p-8 md:p-10">
+        <div class="flex justify-between items-start mb-6">
+          <div>
+            <span class="text-xs font-bold text-blue-600 uppercase tracking-widest">Paid Media | Pan-Africa</span>
+            <h3 class="text-3xl font-extrabold text-slate-900 mt-2">EduTech Global</h3>
+          </div>
+          <button onclick="closeModal(document.getElementById('modal-edutech'))" class="text-slate-400 hover:text-slate-600 p-1">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+          </button>
+        </div>
+        <div class="text-slate-600 mb-8 space-y-1">
+          <p><span class="font-bold text-slate-900">EdTech.</span></p>
+          <p>Performance marketing across social, search, and programmatic channels.</p>
+          <p>Markets: 6 target countries + 4 organic spillover markets across Africa.</p>
+        </div>
+        <div class="grid grid-cols-3 gap-6">
+          <div class="text-center p-4 bg-slate-50 rounded-xl">
+            <div class="text-2xl font-extrabold text-slate-900">20,885</div>
+            <div class="text-xs text-slate-500 mt-1">Leads</div>
+          </div>
+          <div class="text-center p-4 bg-slate-50 rounded-xl">
+            <div class="text-2xl font-extrabold text-slate-900">10</div>
+            <div class="text-xs text-slate-500 mt-1">Countries</div>
+          </div>
+          <div class="text-center p-4 bg-slate-50 rounded-xl">
+            <div class="text-2xl font-extrabold text-slate-900">20%</div>
+            <div class="text-xs text-slate-500 mt-1">Sign-Up Rate</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: Uganda Investment Summit -->
+  <div id="modal-uganda" class="fixed inset-0 z-[100] hidden items-center justify-center bg-black/60 backdrop-blur-sm p-4" onclick="if(event.target===this)closeModal(this)">
+    <div class="bg-white rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto shadow-2xl">
+      <div class="p-8 md:p-10">
+        <div class="flex justify-between items-start mb-6">
+          <div>
+            <span class="text-xs font-bold text-blue-600 uppercase tracking-widest">Event Marketing | East Africa</span>
+            <h3 class="text-3xl font-extrabold text-slate-900 mt-2">Uganda Investment Summit</h3>
+          </div>
+          <button onclick="closeModal(document.getElementById('modal-uganda'))" class="text-slate-400 hover:text-slate-600 p-1">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+          </button>
+        </div>
+        <div class="text-slate-600 mb-8 space-y-1">
+          <p><span class="font-bold text-slate-900">Investment &amp; Trade.</span></p>
+          <p>End-to-end marketing execution: website, visual identity, sponsorship decks, &amp; social media management.</p>
+          <p>Region: East Africa.</p>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div class="text-center p-4 bg-slate-50 rounded-xl">
+            <div class="text-2xl font-extrabold text-slate-900">59K+</div>
+            <div class="text-xs text-slate-500 mt-1">Impressions</div>
+          </div>
+          <div class="text-center p-4 bg-slate-50 rounded-xl">
+            <div class="text-2xl font-extrabold text-slate-900">30K+</div>
+            <div class="text-xs text-slate-500 mt-1">People Reached</div>
+          </div>
+          <div class="text-center p-4 bg-slate-50 rounded-xl">
+            <div class="text-2xl font-extrabold text-slate-900">9K+</div>
+            <div class="text-xs text-slate-500 mt-1">Views</div>
+          </div>
+          <div class="text-center p-4 bg-slate-50 rounded-xl">
+            <div class="text-2xl font-extrabold text-slate-900">20K+</div>
+            <div class="text-xs text-slate-500 mt-1">Engagements</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- CTA Banner -->
   <section class="py-20 bg-slate-50">
@@ -375,15 +507,19 @@
       <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-8 md:p-10">
         <h3 class="text-2xl font-bold text-slate-900 mb-2">Send us a Message</h3>
         <p class="text-slate-600 mb-8">Fill out the form below and we'll get back to you within 24 hours.</p>
-        <form action="#" class="space-y-6" method="POST">
+        <form action="https://formsubmit.co/hi@log10media.com" class="space-y-6" method="POST">
+          <input type="hidden" name="_subject" value="New inquiry from Log10Media website" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_next" value="https://theokeibunor.github.io/log10/#contact" />
+          <input type="text" name="_honey" style="display:none" />
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
               <label class="block text-sm font-semibold text-slate-700 mb-2" for="full-name">Full Name</label>
-              <input class="w-full rounded-lg border-slate-300 focus:border-blue-500 focus:ring-blue-500 transition-all" id="full-name" name="full-name" placeholder="John Doe" type="text" />
+              <input class="w-full rounded-lg border-slate-300 focus:border-blue-500 focus:ring-blue-500 transition-all" id="full-name" name="name" placeholder="John Doe" type="text" required />
             </div>
             <div>
               <label class="block text-sm font-semibold text-slate-700 mb-2" for="email">Work Email</label>
-              <input class="w-full rounded-lg border-slate-300 focus:border-blue-500 focus:ring-blue-500 transition-all" id="email" name="email" placeholder="john@company.com" type="email" />
+              <input class="w-full rounded-lg border-slate-300 focus:border-blue-500 focus:ring-blue-500 transition-all" id="email" name="email" placeholder="john@company.com" type="email" required />
             </div>
           </div>
           <div>
@@ -424,13 +560,16 @@
                 <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
                 <path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
               </svg>
-              Our Studio
+              Our Offices
             </h3>
-            <p class="text-slate-400 pl-9">
-              123 Creative Avenue, Innovation District<br />
-              Casia Lab HQ, Suite 500<br />
-              San Francisco, CA 94103
-            </p>
+            <div class="text-slate-400 pl-9 space-y-3">
+              <p>
+                <span class="font-semibold text-slate-300">UAE:</span> Office 205, Building 5, SHAMS Media City
+              </p>
+              <p>
+                <span class="font-semibold text-slate-300">NGR:</span> 42, Local Airport Road, Ikeja &mdash; Lagos
+              </p>
+            </div>
           </div>
           <div>
             <h3 class="text-lg font-bold text-white mb-4 flex items-center">
@@ -440,8 +579,7 @@
               Direct Contact
             </h3>
             <p class="text-slate-400 pl-9">
-              General: hi@log10media.com<br />
-              Phone: +1 (555) 123-4567
+              hi@log10media.com
             </p>
           </div>
         </div>
@@ -477,7 +615,7 @@
           <span class="text-lg font-bold tracking-tight text-white">Log10<span class="text-blue-600">Media</span></span>
         </div>
         <div class="text-sm">
-          &copy; 2024 Log10Media. A venture by Casia Lab. All rights reserved.
+          &copy; 2026 Log10Media. A venture by Casia Lab. All rights reserved.
         </div>
         <div class="flex space-x-6 text-sm">
           <a class="hover:text-blue-400 transition-colors" href="#">LinkedIn</a>
@@ -488,37 +626,50 @@
     </div>
   </footer>
 
-  <!-- Portfolio Filtering -->
+  <!-- Filter + Modal Logic -->
   <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const filterButtons = document.querySelectorAll('[data-filter]');
-      const portfolioItems = document.querySelectorAll('.portfolio-item');
-
-      filterButtons.forEach(button => {
-        button.addEventListener('click', () => {
-          const filterValue = button.getAttribute('data-filter');
-
-          filterButtons.forEach(btn => {
-            btn.classList.remove('bg-blue-600', 'text-white', 'shadow-md', 'shadow-blue-200');
-            btn.classList.add('bg-slate-100', 'text-slate-600');
-          });
-          button.classList.remove('bg-slate-100', 'text-slate-600');
-          button.classList.add('bg-blue-600', 'text-white', 'shadow-md', 'shadow-blue-200');
-
-          portfolioItems.forEach(item => {
-            if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
-              item.style.display = 'block';
-              item.style.opacity = '0';
-              setTimeout(() => {
-                item.style.opacity = '1';
-                item.style.transition = 'opacity 0.5s ease-in-out';
-              }, 10);
-            } else {
-              item.style.display = 'none';
-            }
-          });
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.filter-btn').forEach(b => {
+          b.classList.remove('bg-blue-600', 'text-white', 'shadow-md', 'shadow-blue-200');
+          b.classList.add('bg-slate-100', 'text-slate-600');
         });
+        btn.classList.remove('bg-slate-100', 'text-slate-600');
+        btn.classList.add('bg-blue-600', 'text-white', 'shadow-md', 'shadow-blue-200');
+
+        // Fade out then back in to simulate reload
+        const cards = document.querySelectorAll('.portfolio-item');
+        cards.forEach(card => {
+          card.style.opacity = '0';
+          card.style.transform = 'translateY(10px)';
+        });
+        setTimeout(() => {
+          cards.forEach((card, i) => {
+            setTimeout(() => {
+              card.style.opacity = '1';
+              card.style.transform = 'translateY(0)';
+              card.style.transition = 'opacity 0.4s ease, transform 0.4s ease';
+            }, i * 100);
+          });
+        }, 200);
       });
+    });
+
+    function openModal(id) {
+      const modal = document.getElementById(id);
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeModal(modal) {
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+      document.body.style.overflow = '';
+    }
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        document.querySelectorAll('[id^="modal-"]').forEach(m => closeModal(m));
+      }
     });
   </script>
 
